@@ -59,7 +59,6 @@ body {
 
 body a{
     text-decoration: none;
-    color:white;
 }
 
 .container{
@@ -207,7 +206,7 @@ body a{
     width:100%;
     height:100%;
     /* background: rgba(0, 0, 0, 0.0001); */
-    background:silver;
+    background:#F1F5F7;
     height:350px;
     /* float:left; */
 
@@ -276,14 +275,12 @@ body a{
     border:1px solid transparent;
     float:left;
     background:white;
-
 }
 
 .registration a{
     text-decoration:none;
     font-size:20px;
     color:black;
-
 }
 
 .adress{
@@ -925,8 +922,6 @@ body a{
 }
 
 .about-contacts h2{
-    border:1px solid pink;
-    width:360px;
     font-weight: bold;
     font-size:40px;
     line-height:1px;

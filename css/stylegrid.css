@@ -1,51 +1,43 @@
-@font-face{
-    font-family:Cuprum;
-    src: url("/fonts/cuprum.woff"),
-    url("/fonts/cuprum.woff2");
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+	font-family: Cuprum;
+	src: url("/fonts/cuprum.woff"), url("/fonts/cuprum.woff2");
+	font-weight: 400;
+	font-style: normal;
 }
 
-@font-face{
-    font-family:Cuprum;
-    src: url("/fonts/cuprumbold.woff"),
-    url("/fonts/cuprumbold.woff2");
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+	font-family: Cuprum;
+	src: url("/fonts/cuprumbold.woff"), url("/fonts/cuprumbold.woff2");
+	font-weight: 400;
+	font-style: normal;
 }
 
-@font-face{
-    font-family:Cuprum;
-    src: url("/fonts/cuprumbolditalic.woff"),
-    url("/fonts/cuprumbolditalic.woff2");
-    font-weight: 700;
-    font-style: italc;
+@font-face {
+	font-family: Cuprum;
+	src: url("/fonts/cuprumbolditalic.woff"), url("/fonts/cuprumbolditalic.woff2");
+	font-weight: 700;
+	font-style: italc;
 }
 
-@font-face{
-    font-family:Cuprum;
-    src: url("/fonts/cuprumitalic.woff"),
-    url("/fonts/cuprumitalic.woff2");
-    font-weight: 400;
-    font-style: italic;
+@font-face {
+	font-family: Cuprum;
+	src: url("/fonts/cuprumitalic.woff"), url("/fonts/cuprumitalic.woff2");
+	font-weight: 400;
+	font-style: italic;
 }
 
-
-@font-face{
-    font-family: PtSans;
-    src: url("/fonts/ptsans.woff"),
-    url("/fonts/ptsans.woff2");
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+	font-family: PtSans;
+	src: url("/fonts/ptsans.woff"), url("/fonts/ptsans.woff2");
+	font-weight: 400;
+	font-style: normal;
 }
 
-
-@font-face{
-    font-family: PtSans;
-    src: url("/fonts/ptsansbold.woff"),
-    url("/fonts/ptsansbold.woff2");
-    font-weight: 700;
-    font-style: normal;
+@font-face {
+	font-family: PtSans;
+	src: url("/fonts/ptsansbold.woff"), url("/fonts/ptsansbold.woff2");
+	font-weight: 700;
+	font-style: normal;
 }
 
 body {
@@ -57,254 +49,250 @@ body {
 	font-family: Cuprum;
 }
 
-header a{
-    text-decoration:none;
+header a {
+	text-decoration: none;
 }
 
-.header-block{
-    background: #293449;
+.header-block {
+	background: #293449;
 }
 
-.container{
-    width:1195px;
-    position: relative;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
+.container {
+	width: 1195px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
-.up-header{
-    display: grid;
-    height:50px;
-    grid-template-areas: 
-    "home-button . search-form bookmarks basket checkout";
+.up-header {
+	display: grid;
+	height: 50px;
+	grid-template-areas: "home-button . search-form bookmarks basket checkout";
 }
 
-.home-button{
-    grid-area:home-button;
-    background:#EE3643;
-    box-shadow:inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-    text-align: center;
-    width:280px;
-    height:45px;
-    padding-top:14px
+.home-button {
+	grid-area: home-button;
+	background: #ee3643;
+	box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+	text-align: center;
+	width: 280px;
+	height: 45px;
+	padding-top: 14px;
 }
 
-.home-button a{
-    text-decoration:none;
-    font-size: 30px;
-    font-weight: bold;
-    color:white;
-    text-transform:uppercase;
+.home-button a {
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
 }
 
 /* search */
 
-.search-form{
-    grid-area: search-form;
-    width:342px;
+.search-form {
+	grid-area: search-form;
+	width: 342px;
 }
 
-.search-form input, .search-form button {
-    outline: none;
-    background: transparent;
+.search-form input,
+.search-form button {
+	outline: none;
+	background: transparent;
 }
 .search-form input {
-    width: 300px;
-    height: 45px;
-    padding-left: 55px;
-    color:white;
-    font-size:20px;
-    font-family: Cuprum;
-    border:transparent;
+	width: 300px;
+	height: 45px;
+	padding-left: 55px;
+	color: white;
+	font-size: 20px;
+	font-family: Cuprum;
+	border: transparent;
 }
 .search-form button {
-    border: none;
-    height: 42px;
-    width: 42px;
-    position: absolute;
-    top: 0;
-    left: 280px;
-    cursor: pointer;
+	border: none;
+	height: 42px;
+	width: 42px;
+	position: absolute;
+	top: 0;
+	left: 280px;
+	cursor: pointer;
 }
 .search-form button:before {
-    content: "\f002";
-    font-size: 16px;
-    color: #F9F0DA;
+	content: "\f002";
+	font-size: 16px;
+	color: #f9f0da;
 }
 
-.search-form input::-webkit-input-placeholder{
-    color:white;
-    font-family:Cuprum ;
-    font-size:21px;
+.search-form input::-webkit-input-placeholder {
+	color: white;
+	font-family: Cuprum;
+	font-size: 21px;
 }
 
 /* search */
 
-.bookmarks{
-    grid-area: bookmarks;
-    width:200px;
-    text-align: center;
-    padding-top:12px;
-    padding-bottom:12px;
+.bookmarks {
+	grid-area: bookmarks;
+	width: 200px;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
-.bookmarks a{
-    text-decoration:none;
-    color:white;
-    font-family: Cuprum;
-    font-size:23px;
+.bookmarks a {
+	text-decoration: none;
+	color: white;
+	font-family: Cuprum;
+	font-size: 23px;
 }
 
-.basket{
-    grid-area: basket;
-    width:176px;
-    text-align: center;
-    padding-top:12px;
-    padding-bottom:12px;
+.basket {
+	grid-area: basket;
+	width: 176px;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
 }
 
-.basket a{
-    text-decoration:none;
-    color:white;
-    font-family: Cuprum;
-    font-size:23px;
+.basket a {
+	text-decoration: none;
+	color: white;
+	font-family: Cuprum;
+	font-size: 23px;
 }
 
-.checkout{
-    grid-area: checkout;
-    width:189px;
-    text-align: center;
-    height:26px;
-    padding-top:12px;
-    padding-bottom: 12px;
-    background:#63A63E;
+.checkout {
+	grid-area: checkout;
+	width: 189px;
+	text-align: center;
+	height: 26px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background: #63a63e;
 }
 
-.checkout a{
-    text-decoration:none;
-    color:white;
-    font-family: Cuprum;
-    font-size:23px;
+.checkout a {
+	text-decoration: none;
+	color: white;
+	font-family: Cuprum;
+	font-size: 23px;
 }
-.middle-header-block{
-    background:silver;
-}
-
-.middle-header{
-    display:grid;
-    /* background: rgba(0, 0, 0, 0.0001); */
-    height:350px;
-    grid-template-areas: 
-    "about-p header-phone . enter . registration"
-    "about-p header-phone . enter . registration"
-    "about-p adress . enter . registration"
-    "bottom-header-block bottom-header-block bottom-header-block bottom-header-block bottom-header-block bottom-header-block"
-    ". . . . . .";
-
-    grid-row-gap: 0px;
-    grid-column-gap: 0px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-rows: repeat(10, 8fr);    
+.middle-header-block {
+	background: silver;
 }
 
-.about-p{
-    grid-area: about-p;
-    font-family: Cuprum;
-    font-style: italic;
-    width:250px;
-    height:135px;
-    margin-top:25px;
-    margin-left:35px;
-    font-size:20px;
-    color:#EE3643;
-    line-height: 30px;
+.middle-header {
+	display: grid;
+	/* background: rgba(0, 0, 0, 0.0001); */
+	height: 350px;
+	grid-template-areas:
+		"about-p header-phone . enter . registration"
+		"about-p header-phone . enter . registration"
+		"about-p adress . enter . registration"
+		"bottom-header-block bottom-header-block bottom-header-block bottom-header-block bottom-header-block bottom-header-block"
+		". . . . . .";
+
+	grid-row-gap: 0px;
+	grid-column-gap: 0px;
+	/* grid-template-columns: repeat(3, 1fr); */
+	grid-template-rows: repeat(10, 8fr);
 }
 
-.header-phone{
-    grid-area: header-phone;
-    border:2px solid black;
-    text-align: center;
-    width:285px;
-    padding-left:50px;
-    height:25px;
-    margin-top:50px;
-    /* margin-bottom:200px; */
+.about-p {
+	grid-area: about-p;
+	font-family: Cuprum;
+	font-style: italic;
+	width: 250px;
+	height: 135px;
+	margin-top: 25px;
+	margin-left: 35px;
+	font-size: 20px;
+	color: #ee3643;
+	line-height: 30px;
 }
 
-.enter{
-    grid-area: enter;
-    border:1px solid transparent;
-    width: 150px;
-    height:55px;
-    text-align:center;
-    line-height: 55px;
-    background:white;
-    margin-top:10px;
-    margin-top:50px;
-
+.header-phone {
+	grid-area: header-phone;
+	border: 2px solid black;
+	text-align: center;
+	width: 285px;
+	padding-left: 50px;
+	height: 25px;
+	margin-top: 50px;
+	/* margin-bottom:200px; */
 }
 
-.registration{
-    grid-area: registration;
-    text-align:center;
-    line-height: 55px;
-    width: 190px;
-    height:55px;
-    border:1px solid transparent;
-    background:white;
-    margin-top:50px;
+.enter {
+	grid-area: enter;
+	border: 1px solid transparent;
+	width: 150px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	background: white;
+	margin-top: 10px;
+	margin-top: 50px;
+}
+
+.registration {
+	grid-area: registration;
+	text-align: center;
+	line-height: 55px;
+	width: 190px;
+	height: 55px;
+	border: 1px solid transparent;
+	background: white;
+	margin-top: 50px;
 }
 
 .enter a,
-.registration a{
-    text-decoration: none;
-    font-size:20px;
-    color:black;
+.registration a {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
 }
 
-.adress{
-    grid-area: adress;
-    width:337px;
-    height:30px;
-    text-align:center;
-    margin-top:60px;
+.adress {
+	grid-area: adress;
+	width: 337px;
+	height: 30px;
+	text-align: center;
+	margin-top: 60px;
 }
 
-.bottom-header{
-    width:1190px;
+.bottom-header {
+	width: 1190px;
 }
 
-.bottom-header ul{
-    list-style-type: none;
-    color:white;
+.bottom-header ul {
+	list-style-type: none;
+	color: white;
 }
 
-.bottom-header li{
-    float:left;
-    padding-left:17px;
-    font-size:20px;
+.bottom-header li {
+	float: left;
+	padding-left: 17px;
+	font-size: 20px;
 }
 
-.bottom-header li:not(:first-child){
-    padding-left:66px;
+.bottom-header li:not(:first-child) {
+	padding-left: 66px;
 }
 
-.bottom-header a{
-    text-decoration: none;
-    color: white;
+.bottom-header a {
+	text-decoration: none;
+	color: white;
 }
 
-.bottom-header{
-    grid-area: bottom-header-block;
-    width:1190px;
-    height:75px;
-    background:#32425C;
-    box-shadow: inset 0px -5px 0px #293449;
-    margin-top:100px;
+.bottom-header {
+	grid-area: bottom-header-block;
+	width: 1190px;
+	height: 75px;
+	background: #32425c;
+	box-shadow: inset 0px -5px 0px #293449;
+	margin-top: 100px;
 }
-
-
-
