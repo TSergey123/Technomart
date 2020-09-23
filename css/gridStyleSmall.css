@@ -1108,6 +1108,14 @@ body {
 	color: white;
 }
 
+.services-table li:first-child:active {
+	background: white;
+}
+
+.services-table li:first-child:active a {
+	color: black;
+}
+
 .delivery-terms {
 	margin-left: 25px;
 	width: 615px;
