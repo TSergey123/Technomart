@@ -999,7 +999,7 @@ body {
 
 .good:nth-child(3) .actual-price {
 	/* display: none; */
-	margin-top: 35px;
+	margin-top: 10px;
 }
 
 .good:last-child .actual-price {
