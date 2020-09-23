@@ -424,9 +424,6 @@ body {
 	padding-left: 32px;
 }
 
-.header-navbar li:last-child {
-	/* padding-left: 35px; */
-}
 .header-navbar li {
 	float: left;
 	padding-right: 25px;
