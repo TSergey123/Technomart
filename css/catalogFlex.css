@@ -412,34 +412,41 @@ body {
 
 .reg-but .reg-user-nav {
 	align-self: flex-end;
-	width: 220px;
+	width: 305px;
 	height: 20px;
-	margin-right: 72px;
 	margin-bottom: 4px;
 }
 
-.reg-but ul {
-	width: 220px;
-	height: 20px;
-}
-
-.reg-but li {
+.reg-user-nav li a {
 	float: left;
+	cursor: pointer;
 }
 
-.reg-but li:hover {
+.reg-user-nav a{
+	color:#32425C;
+	text-decoration: none ;
+}
+
+.reg-user-nav li:hover,
+.reg-user-nav a:hover {
 	color: red;
 }
 
-.reg-but li:active {
+.reg-user-nav a:active,
+.reg-user-nav li:active{
 	color: black;
 	opacity: 0.3;
 }
 
-.reg-but li:first-child {
+.reg-user-nav li:first-child {
 	list-style-type: none;
 	padding-right: 31px;
 }
+.reg-user-nav a:first-child{
+	padding-right: 32px;
+}
+
+
 
 .header-navbar {
 	background: #32425c;

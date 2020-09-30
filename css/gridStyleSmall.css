@@ -357,16 +357,39 @@ body {
 	line-height: 42px;
 	background: white;
 	justify-self: end;
+	position: relative;
 }
 
 .enter a {
 	text-decoration: none;
 	font-size: 21px;
 	color: black;
+	padding-left:15px;
+	
 }
 
 .enter a:hover {
 	color: #ee3643;
+}
+
+.enter::before{
+	position: absolute;
+	content: "";
+	top:9px;
+	left:5px;
+	width:25px;
+	height:25px;
+	background: url("/TechnomartIcons/icons/icon-login.svg") no-repeat 25%;
+}
+
+.enter a:hover::before{
+	position: absolute;
+	content: "";
+	top:9px;
+	left:5px;
+	width:25px;
+	height:25px;
+	background: url("/TechnomartIcons/icons/icon-login-black.svg") no-repeat 25%;
 }
 
 .enter a:active {
