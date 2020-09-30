@@ -488,10 +488,6 @@ body {
 	transform: translate(-50%, -25%);
 }
 
-.term-action {
-	background: rgba(255.255.255.0.3);
-}
-
 .materials .term-action a {
 	opacity: 1;
 }
@@ -573,6 +569,7 @@ body {
 	height: 28px;
 	text-align: center;
 	padding-top: 5px;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 .term-action a {
