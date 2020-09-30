@@ -334,7 +334,7 @@ body {
 	font-size: 21px;
 	font-family: Cuprum;
 	padding-left: 7px;
-	color: #EE3643;
+	color: #ee3643;
 }
 
 .adress {
@@ -422,9 +422,9 @@ body {
 	cursor: pointer;
 }
 
-.reg-user-nav a{
-	color:#32425C;
-	text-decoration: none ;
+.reg-user-nav a {
+	color: #32425c;
+	text-decoration: none;
 }
 
 .reg-user-nav li:hover,
@@ -433,7 +433,7 @@ body {
 }
 
 .reg-user-nav a:active,
-.reg-user-nav li:active{
+.reg-user-nav li:active {
 	color: black;
 	opacity: 0.3;
 }
@@ -442,11 +442,9 @@ body {
 	list-style-type: none;
 	padding-right: 31px;
 }
-.reg-user-nav a:first-child{
+.reg-user-nav a:first-child {
 	padding-right: 32px;
 }
-
-
 
 .header-navbar {
 	background: #32425c;
@@ -816,7 +814,7 @@ body {
 .catalog-sort a {
 	float: left;
 	font-size: 13px;
-	color:black
+	color: black;
 }
 
 .catalog-sort li {
@@ -1131,8 +1129,8 @@ footer {
 
 .catalog-top-footer {
 	/* height: 203px; */
-	height:195px;
-	margin-top:60px;
+	height: 195px;
+	margin-top: 60px;
 }
 
 .catalog-top-footer h3 {
@@ -1170,7 +1168,6 @@ footer {
 	line-height: 24px;
 	color: white;
 	font-size: 18px;
-
 }
 
 .footer-nav-top li {
