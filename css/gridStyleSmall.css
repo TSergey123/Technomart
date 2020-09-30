@@ -1,41 +1,42 @@
 @font-face {
 	font-family: Cuprum;
-	src: url("/fonts/cuprum.woff"), url("/fonts/cuprum.woff2");
+	src: url("../fonts/cuprum.woff"), url("/fonts/cuprum.woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Cuprum;
-	src: url("/fonts/cuprumbold.woff"), url("/fonts/cuprumbold.woff2");
+	src: url("../fonts/cuprumbold.woff"), url("/fonts/cuprumbold.woff2");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Cuprum;
-	src: url("/fonts/cuprumbolditalic.woff"), url("/fonts/cuprumbolditalic.woff2");
+	src: url("../fonts/cuprumbolditalic.woff"),
+		url("/fonts/cuprumbolditalic.woff2");
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Cuprum;
-	src: url("/fonts/cuprumitalic.woff"), url("/fonts/cuprumitalic.woff2");
+	src: url("../fonts/cuprumitalic.woff"), url("/fonts/cuprumitalic.woff2");
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: PtSans;
-	src: url("/fonts/ptsans.woff"), url("/fonts/ptsans.woff2");
+	src: url("../fonts/ptsans.woff"), url("/fonts/ptsans.woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: PtSans;
-	src: url("/fonts/ptsansbold.woff"), url("/fonts/ptsansbold.woff2");
+	src: url("../fonts/ptsansbold.woff"), url("/fonts/ptsansbold.woff2");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -46,9 +47,6 @@
 
 body {
 	min-width: 1240px;
-	/* margin: 0;
-	padding: 0;
-	line-height: 24px; */
 	font-family: Cuprum;
 }
 
@@ -68,6 +66,10 @@ body {
 	left: 0;
 	right: 0;
 	margin: auto;
+}
+
+.break {
+	flex-basis: 100%;
 }
 
 .up-header {
@@ -223,7 +225,7 @@ body {
 	color: white;
 	font-family: Cuprum;
 	border: transparent;
-	width: 138px;
+	width: 238px;
 	height: 40px;
 	position: absolute;
 	top: 0;
@@ -236,7 +238,7 @@ body {
 	cursor: pointer;
 }
 
-.search-form:before {
+.search-form::before {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -244,8 +246,8 @@ body {
 	width: 20px;
 	height: 20px;
 	background: url("/TechnomartIcons/icons/icon-search.svg") no-repeat 25%;
+	z-index: 1;
 	background-size: 15px;
-	opacity: 0.3;
 }
 
 .search-form:hover::before {
@@ -256,6 +258,11 @@ body {
 .search-form input:hover {
 	color: black;
 	background: white;
+}
+
+.search-form:hover::before,
+.search-form:active::before {
+	background: url("/TechnomartIcons/icons/icon-search-red.svg") no-repeat 25%;
 }
 
 .search-form a:active {
@@ -282,7 +289,6 @@ body {
 .middle-header {
 	height: 278px;
 	display: grid;
-	/* height: 380px; */
 	grid-template-columns: 240px 335px 366px;
 	grid-template-rows: 115px 18px 85px 150px 50px 50px;
 	column-gap: 1em;
@@ -298,7 +304,6 @@ body {
 	align-self: end;
 	grid-column: 1;
 	grid-row: 1;
-	/* margin-top: 230px; */
 	color: #ee3643;
 }
 
@@ -409,7 +414,6 @@ body {
 
 .header-navbar ul {
 	position: absolute;
-	/* top: -15px; */
 	list-style-type: none;
 	color: white;
 	align-self: center;
@@ -428,8 +432,8 @@ body {
 	float: left;
 	padding-right: 25px;
 	padding-left: 25px;
-	height: 50px;
-	padding-top: 20px;
+	height: 60px;
+	line-height: 55px;
 	align-self: center;
 	grid-column: 4;
 }
@@ -483,8 +487,8 @@ body {
 	transform: translate(-50%, -25%);
 }
 
-.materials .term-action {
-	opacity: 0.3;
+.term-action {
+	background: rgba(255.255.255.0.3);
 }
 
 .materials .term-action a {
@@ -504,12 +508,6 @@ body {
 	grid-column: 2;
 }
 
-.instruments .term-action {
-	/* background: #FFFFFF; */
-	mix-blend-mode: normal;
-	opacity: 0.3;
-}
-
 .instruments img {
 	position: absolute;
 	left: 59%;
@@ -527,11 +525,6 @@ body {
 	transform: translate(-50%, -25%);
 }
 
-.vehicles .term-action {
-	/* background: #FFFFFF; */
-	opacity: 0.3;
-}
-
 .discount {
 	background: #8ed78f;
 	grid-column: 3;
@@ -544,19 +537,10 @@ body {
 	transform: translate(-50%, -58%);
 }
 
-.discount .term-action {
-	/* background: #FFFFFF; */
-	opacity: 0.3;
-}
-
 .delivery {
 	background: #ffc047;
 	grid-column: 3;
 	grid-row: 3;
-}
-
-.delivery .term-action {
-	opacity: 0.3;
 }
 
 .delivery img {
@@ -568,7 +552,6 @@ body {
 
 .carousel {
 	width: 785px;
-	/* height: 538px; */
 	grid-column: 1/2;
 	grid-row: 2/3;
 }
@@ -686,7 +669,6 @@ body {
 	font-size: 36px;
 	text-transform: uppercase;
 	margin-left: 24px;
-	/* margin-bottom: 40px; */
 	line-height: 77px;
 }
 
@@ -787,9 +769,7 @@ body {
 /* assortment */
 
 .hover-good {
-	grid-template-columns: 40px 100px 100px;
-	grid-template-rows: 1px 1px 70px;
-	row-gap: 50px;
+	grid-template-rows: 70px 25px 1px;
 	display: none;
 }
 
@@ -830,10 +810,9 @@ body {
 	box-shadow: inset 0px -3px 0px #367315;
 	padding-top: 5px;
 	grid-column: 2;
-	grid-row: 2;
+	grid-row: 1;
 	position: relative;
-	margin-left: 50px;
-	margin-top: 50px;
+	align-self: end;
 }
 
 .hover-buy:before {
@@ -874,8 +853,6 @@ body {
 	padding-top: 5px;
 	grid-column: 2;
 	grid-row: 3;
-	margin-top: 25px;
-	margin-left: 50px;
 }
 
 .assortment {
@@ -892,8 +869,8 @@ body {
 	text-align: center;
 	font-family: PT Sans;
 	overflow: hidden;
-	/* display: grid;
-	grid-template-rows: 160px 75px 8px 25px; */
+	display: grid;
+	grid-template-rows: 175px 45px 36px 25px;
 }
 
 .out-ticket {
@@ -914,14 +891,9 @@ body {
 	font-size: 14px;
 }
 
-.good:nth-child(2) .ticket {
-	/* display: none; */
-	bottom: 281px;
-}
-
 .good .ticket {
 	left: 143px;
-	bottom: 207px;
+	bottom: 281px;
 }
 
 .materials .ticket {
@@ -929,32 +901,17 @@ body {
 	margin-top: -36px;
 }
 
-.good img {
-	border: 1px solid transparent;
-	width: 184px;
-	height: 164px;
+.good-img {
 	grid-row: 1;
-	/* display: none; */
-}
-
-.good:not(:first-child) img {
-	width: 130px;
-	height: 125px;
-	margin-top: 20px;
-	margin-right: 10px;
-
-	/* display: none; */
-}
-
-.good:not(:first-child) h2 {
-	margin-top: 30px;
 }
 
 .good h2 {
-	width: 170px;
-	font-size: 19px;
 	grid-row: 2;
-	padding-left: 25px;
+	font-size: 21px;
+}
+
+.good:not(:first-child) img {
+	margin-top: 20px;
 }
 
 .previus-price {
@@ -975,35 +932,12 @@ body {
 	color: white;
 	height: 38px;
 	width: 120px;
-	margin-top: 12px;
 	margin-left: 46px;
 	text-align: center;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 42px;
 	grid-row: 4;
-}
-
-.good:nth-child(2) .actual-price {
-	/* display: none; */
-	margin-top: 2px;
-}
-
-.good:nth-child(3) img {
-	/* display: none; */
-	margin-top: 27px;
-	margin-left: 13px;
-	width: 130px;
-	height: 110px;
-}
-
-.good:nth-child(3) .actual-price {
-	/* display: none; */
-	margin-top: 10px;
-}
-
-.good:last-child .actual-price {
-	margin-top: 32px;
 }
 
 .actual-price::after {
@@ -1015,6 +949,7 @@ body {
 	height: 0;
 	border: 19px solid #fff;
 	border-left-color: #ee3643;
+	grid-row: 4;
 }
 
 .popular-manufacturers {
@@ -1025,7 +960,6 @@ body {
 }
 
 .popular-manufacturers h2 {
-	/* line-height: 75px; */
 	padding-top: 24px;
 	font-size: 30px;
 	text-transform: uppercase;
@@ -1040,7 +974,6 @@ body {
 	background: #ee3643;
 	margin-top: 22px;
 	margin-left: 59px;
-	/* margin-right: 10px; */
 	line-height: 45px;
 	grid-column: 2;
 }
@@ -1054,11 +987,8 @@ body {
 
 .manufactures-icons {
 	height: 345px;
-	/* margin-top: 5px; */
 	display: grid;
 	grid-template-columns: 239px 239px 239px 300px;
-	/* grid-template-rows:145px 150px ; */
-	/* grid-row-gap:1px; */
 }
 
 .manufactures-icons img {
@@ -1103,12 +1033,10 @@ body {
 .services {
 	grid-column: 1;
 	grid-row: 2;
-	/* align-self: flex-start; */
 }
 
 .services h2 {
 	font-size: 30px;
-	/* line-height: 1px; */
 	text-transform: uppercase;
 }
 
@@ -1134,6 +1062,16 @@ body {
 .services-table::after {
 	content: "";
 	position: absolute;
+	height: 279px;
+	width: 10px;
+	background: url("/TechnomartIcons/other_images/Object.png");
+	top: 0;
+	right: 40px;
+}
+
+/* .services-table::after {
+	content: "";
+	position: absolute;
 	border-right: 1px solid #aaaaaa;
 	height: 279px;
 	top: 30px;
@@ -1142,7 +1080,7 @@ body {
 	mix-blend-mode: normal;
 	background: rgba(0, 0, 0, 0.0001);
 	box-shadow: -10px 0px 10px 2px #aaaaaa;
-}
+} */
 
 .services-table a {
 	text-decoration: none;
@@ -1288,7 +1226,6 @@ body {
 	background: #ee3643;
 	text-align: center;
 	margin-top: 10px;
-	/* grid-row:2; */
 }
 
 .more-about a {
@@ -1317,10 +1254,8 @@ body {
 }
 
 .contacts img {
-	/* display: none;; */
 	width: 300px;
 	height: 158px;
-	/* padding-right:30px; */
 }
 
 .popup {
@@ -1328,6 +1263,10 @@ body {
 }
 
 /* modal */
+
+.google-map {
+	cursor: pointer;
+}
 
 .modal {
 	display: none;
@@ -1409,7 +1348,6 @@ body {
 /* footer */
 
 .top-footer-bg {
-	/* margin-top: 20px; */
 	background: #32425c;
 	height: 193px;
 }
@@ -1619,9 +1557,6 @@ body {
 	grid-column: 4;
 	justify-self: end;
 	margin-top: 35px;
-}
-
-.made-by p {
 	color: white;
 }
 
