@@ -1122,11 +1122,13 @@ footer {
 }
 
 .catalog-top-footer {
-	height: 203px;
+	/* height: 203px; */
+	height:195px;
+	margin-top:60px;
 }
 
 .catalog-top-footer h3 {
-	margin-top: 64px;
+	padding-top: 64px;
 	font-size: 29px;
 	text-transform: uppercase;
 }
