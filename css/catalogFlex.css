@@ -808,6 +808,7 @@ body {
 .catalog-sort a {
 	float: left;
 	font-size: 13px;
+	color:black
 }
 
 .catalog-sort li {
