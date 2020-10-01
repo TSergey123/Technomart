@@ -103,11 +103,10 @@ body {
 
 .bookmarks {
 	text-align: center;
-	justify-self: end;
-	width: 200px;
+	align-self: flex-start;
+	width: 220px;
 	height: 28px;
 	padding-top: 10px;
-	grid-column: 3;
 	position: relative;
 }
 
@@ -937,6 +936,17 @@ body {
 	display: none;
 }
 
+.hover-buy input{
+	width:100%;
+	height:100%;
+	background:transparent;
+	/* border:transparent; */
+	color:white;
+	font-size:16px;
+	padding-bottom:10px;
+	line-height:30px;
+}
+
 .hover-buy a {
 	text-decoration: none;
 	color: white;
@@ -944,6 +954,16 @@ body {
 	font-size: 14px;
 	padding-left: 50px;
 	line-height: 30px;
+}
+
+.hover-bookmarks input{
+	color: #32425c;
+	font-size:14px;
+	height: 100%;
+	width:100%;
+	background: transparent;
+	border:transparent;
+	text-transform: uppercase;
 }
 
 .hover-bookmarks a {
@@ -957,11 +977,11 @@ body {
 
 .hover-buy {
 	width: 135px;
-	height: 33px;
+	height: 40px;
 	border-radius: 2px;
 	background: #63a63e;
 	box-shadow: inset 0px -3px 0px #367315;
-	padding-top: 5px;
+	/* padding-top: 5px; */
 	position: relative;
 	margin-top: 30px;
 }
@@ -999,9 +1019,9 @@ body {
 	border: 3px solid #63a63e;
 	box-sizing: border-box;
 	width: 135px;
-	height: 38px;
+	height: 40px;
 	border-radius: 2px;
-	padding-top: 5px;
+	/* padding-top: 5px; */
 	align-self: center;
 	justify-self: center;
 	margin-top: 10px;
