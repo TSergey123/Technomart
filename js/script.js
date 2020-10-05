@@ -4,14 +4,6 @@ var btn = document.getElementById("myBtn");
 
 var span = document.getElementsByClassName("close")[0];
 
-let add = document.getElementById("basket_add");
-		let value = document.getElementById("basket_value");
-			let i = 11;
-			add.onclick = function(){
-				value.innerHTML = i++;
-			}
-
-
 btn.onclick = function () {
 	modal.style.display = "block";
 };

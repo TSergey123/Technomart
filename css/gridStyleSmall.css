@@ -79,7 +79,9 @@ body {
 .top-header {
 	height: 42px;
 	display: grid;
-	grid-template-columns: 220px 252px 161px 157px 1px;
+	/* grid-template-columns: 220px 252px 161px 157px 1px; */
+	grid-template-columns: 220px 275px 158px 137px 1px;
+
 }
 
 .home-button {
@@ -101,26 +103,30 @@ body {
 	text-transform: uppercase;
 }
 
+
+
 .bookmarks {
 	text-align: center;
 	justify-self: end;
-	width: 200px;
-	height: 28px;
+	width: 131px;
+	height: 32px;
 	padding-top: 10px;
 	grid-column: 3;
 	position: relative;
+
 }
 
 .bookmarks a {
 	text-decoration: none;
 	color: white;
+	padding-left:22px;
 }
 
 .bookmarks::before {
 	content: "";
 	position: absolute;
-	top: 11px;
-	left: 37px;
+	top: 10px;
+	left:10px;
 	width: 20px;
 	height: 20px;
 	background: url("/TechnomartIcons/icons/icon-bookmark.svg") no-repeat 25%;
@@ -144,8 +150,8 @@ body {
 }
 
 .basket {
-	height: 15px;
-	width: 183px;
+	height: 20px;
+	width: 137px;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 12px;
@@ -158,13 +164,14 @@ body {
 	text-decoration: none;
 	color: white;
 	font-family: Cuprum;
+	padding-left:5px;
 }
 
 .basket::before {
 	content: "";
 	position: absolute;
-	top: 11px;
-	left: 31px;
+	top: 10px;
+	left: 10px;
 	width: 20px;
 	height: 20px;
 	background: url("/TechnomartIcons/icons/icon-cart.svg") no-repeat 25%;
@@ -364,31 +371,30 @@ body {
 	text-decoration: none;
 	font-size: 21px;
 	color: black;
-	padding-left:15px;
-	
+	padding-left: 15px;
 }
 
 .enter a:hover {
 	color: #ee3643;
 }
 
-.enter::before{
+.enter::before {
 	position: absolute;
 	content: "";
-	top:9px;
-	left:5px;
-	width:25px;
-	height:25px;
+	top: 9px;
+	left: 5px;
+	width: 25px;
+	height: 25px;
 	background: url("/TechnomartIcons/icons/icon-login.svg") no-repeat 25%;
 }
 
-.enter a:hover::before{
+.enter a:hover::before {
 	position: absolute;
 	content: "";
-	top:9px;
-	left:5px;
-	width:25px;
-	height:25px;
+	top: 9px;
+	left: 5px;
+	width: 25px;
+	height: 25px;
 	background: url("/TechnomartIcons/icons/icon-login-black.svg") no-repeat 25%;
 }
 
@@ -806,6 +812,27 @@ body {
 	display: none;
 }
 
+.hover-buy input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: transparent;
+	color: white;
+	font-size: 16px;
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+.hover-bookmarks input {
+	color: #32425c;
+	font-size: 14px;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+	border: transparent;
+	text-transform: uppercase;
+}
+
 .hover-buy a {
 	text-decoration: none;
 	color: white;
@@ -825,11 +852,11 @@ body {
 
 .hover-buy {
 	width: 135px;
-	height: 33px;
+	height: 35px;
 	border-radius: 2px;
 	background: #63a63e;
 	box-shadow: inset 0px -3px 0px #367315;
-	padding-top: 5px;
+	/* padding-top: 5px; */
 	grid-column: 2;
 	grid-row: 1;
 	position: relative;
@@ -871,7 +898,6 @@ body {
 	width: 135px;
 	height: 38px;
 	border-radius: 2px;
-	padding-top: 5px;
 	grid-column: 2;
 	grid-row: 3;
 }
@@ -1584,3 +1610,158 @@ body {
 .made-by a {
 	color: #ffd180;
 }
+
+/* lost modal */
+
+.modal-block {
+	width: 600px;
+	height: 420px;
+	border: 1px solid lightgrey;
+	font-size: 20px;
+	font-weight: bold;
+	background: white;
+	position: relative;
+	margin: auto;
+	padding: 0;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 1.5);
+}
+
+.modal-block input {
+	width: 204px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.modal-block-header {
+	border-top: 5px solid #e93a46;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.close {
+	padding-right: 20px;
+	padding-top: 10px;
+	color: #ee3643;
+	font-size: 35px;
+}
+
+.main-modal-block {
+	width: 450px;
+	height: 270px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.modal-block-footer {
+	background: #f7f3ec;
+	height: 96px;
+	/* margin-top: 15px; */
+}
+
+.modal-block-footer input {
+	background: #ee3643;
+}
+
+.center-footer {
+	width: 450px;
+	margin: auto;
+	display: flex;
+	height: 100px;
+}
+
+.modal-block-footer input {
+	width: 100%;
+	height: 35px;
+	color: white;
+	align-self: center;
+	text-transform: uppercase;
+}
+
+.modal-name label,
+.modal-email label {
+	height: 30px;
+	align-self: flex-end;
+}
+
+.modal-name,
+.modal-email {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 192px;
+}
+
+.modal-email {
+	margin-left: 60px;
+}
+
+.modal-area {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.modal-area textarea {
+	border-radius: 5px;
+}
+
+.modal-area label {
+	height: 30px;
+	align-self: flex-end;
+}
+
+/* show-modal */
+
+.lost-modal-class {
+	display: none;
+	position: fixed;
+	padding-top: 620px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.closeModal {
+	color: #ee3643;
+	font-size: 50px;
+	font-weight: bold;
+	right: 0;
+	cursor: pointer;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes error {
+	0%,
+	25% {
+		left: -1px;
+		transform: translateX(-4%);
+	}
+	50%,
+	100% {
+		left: 1px;
+		transform: translateX(4%);
+	}
+}
+
+.wibro {
+	animation: 0.4s error ease-out;
+}
+
+/* lost-modal */
