@@ -81,7 +81,6 @@ body {
 	display: grid;
 	/* grid-template-columns: 220px 252px 161px 157px 1px; */
 	grid-template-columns: 220px 275px 158px 137px 1px;
-
 }
 
 .home-button {
@@ -103,8 +102,6 @@ body {
 	text-transform: uppercase;
 }
 
-
-
 .bookmarks {
 	text-align: center;
 	justify-self: end;
@@ -113,20 +110,19 @@ body {
 	padding-top: 10px;
 	grid-column: 3;
 	position: relative;
-
 }
 
 .bookmarks a {
 	text-decoration: none;
 	color: white;
-	padding-left:22px;
+	padding-left: 22px;
 }
 
 .bookmarks::before {
 	content: "";
 	position: absolute;
 	top: 10px;
-	left:10px;
+	left: 10px;
 	width: 20px;
 	height: 20px;
 	background: url("/img/TechnomartIcons/icons/icon-bookmark.svg") no-repeat 25%;
@@ -164,7 +160,7 @@ body {
 	text-decoration: none;
 	color: white;
 	font-family: Cuprum;
-	padding-left:10px;
+	padding-left: 10px;
 }
 
 .basket::before {
@@ -255,6 +251,7 @@ body {
 	background: url("/img/TechnomartIcons/icons/icon-search.svg") no-repeat 25%;
 	z-index: 1;
 	background-size: 15px;
+	opacity: 0.3;
 }
 
 .search-form:hover::before {
@@ -395,7 +392,8 @@ body {
 	left: 5px;
 	width: 25px;
 	height: 25px;
-	background: url("/img/TechnomartIcons/icons/icon-login-black.svg") no-repeat 25%;
+	background: url("/img/TechnomartIcons/icons/icon-login-black.svg") no-repeat
+		25%;
 }
 
 .enter a:active {
@@ -591,7 +589,6 @@ body {
 }
 
 .term-action {
-	border: 1px solid black;
 	width: 132px;
 	margin-top: 18px;
 	margin-left: 23px;
@@ -954,7 +951,10 @@ body {
 
 .good h2 {
 	grid-row: 2;
-	font-size: 21px;
+	font-size: 18px;
+	font-family: PTSans;
+	width: 150px;
+	margin-left: 32px;
 }
 
 .good:not(:first-child) img {
@@ -962,15 +962,15 @@ body {
 }
 
 .previus-price {
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 30px;
-	font-weight: bold;
 	align-items: center;
 	text-align: center;
 	text-decoration-line: line-through;
 	text-transform: uppercase;
 	color: #a9a9a9;
 	grid-row: 3;
+	font-family: PTSans;
 }
 
 .actual-price {
@@ -981,10 +981,11 @@ body {
 	width: 120px;
 	margin-left: 46px;
 	text-align: center;
-	font-weight: bold;
-	font-size: 22px;
+	/* font-weight: bold; */
+	font-size: 18px;
 	line-height: 42px;
 	grid-row: 4;
+	font-family: PTSans;
 }
 
 .actual-price::after {
@@ -1073,13 +1074,15 @@ body {
 	display: grid;
 	grid-template-columns: 295px 100px 100px;
 	grid-template-rows: 60px 127px 13px;
-	background: url("/img/TechnomartIcons/other_images/delicar.png") no-repeat 100% 50%;
+	background: url("/img/TechnomartIcons/other_images/delicar.png") no-repeat 100%
+		50%;
 	background-position: 100% 129%;
 }
 
 .services {
 	grid-column: 1;
 	grid-row: 2;
+	font-family: PTSans;
 }
 
 .services h2 {
@@ -1088,7 +1091,6 @@ body {
 }
 
 .services p {
-	font-family: PT Sans;
 	padding-top: 20px;
 	font-size: 13px;
 	line-height: 27px;
@@ -1384,14 +1386,14 @@ body {
 	text-align: center;
 }
 
-.contact-us-button{
-	width:100%;
-	height:100%;
-	background:transparent;
-	border:transparent;
-	color:white;
+.contact-us-button {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: transparent;
+	color: white;
 	font-family: PTSans;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	cursor: pointer;
 }
 
@@ -1512,7 +1514,7 @@ body {
 
 .copyright {
 	color: white;
-	width: 270px;
+	width: 245px;
 	grid-column: 1;
 	grid-row: 2;
 }

@@ -251,7 +251,7 @@ body {
 	background: url("/img/TechnomartIcons/icons/icon-search.svg") no-repeat 25%;
 	z-index: 1;
 	background-size: 15px;
-	/* opacity: 0.3; */
+	opacity: 0.3;
 }
 
 .search-form:hover::before {
@@ -518,6 +518,8 @@ body {
 	padding-right: 30px;
 	padding-top: 1px;
 	font-size: 14px;
+	font-style: PTSans;
+
 }
 
 .catalog-list a {
@@ -532,7 +534,6 @@ body {
 }
 
 .catalog-list li:first-child {
-	/* padding-left:-120px; */
 	margin-left: -37px;
 }
 
@@ -543,17 +544,17 @@ body {
 
 .catalog-block-title {
 	background: #f2f6f8;
-	/* background: black; */
 	height: 89px;
 	margin-top: 16px;
 }
 
 .catalog-block-title h2 {
-	/* padding-top: 30px; */
-	padding-left: 30px;
+	padding-left: 29px;
 	text-transform: uppercase;
 	line-height: 90px;
 	font-size: 30px;
+	font-weight: normal;
+	padding-top:2px;
 }
 
 .filter-block {
@@ -787,9 +788,12 @@ body {
 
 .catalog-sort {
 	margin-top: 15px;
-	text-transform: uppercase;
 	width: 700px;
 	height: 1080px;
+}
+
+.catalog-sort nav{
+	text-transform: uppercase;
 }
 
 .catalog-sort-title {
@@ -917,6 +921,7 @@ body {
 	margin-left: 25px;
 	font-size: 18px;
 	width: 168px;
+	font-family: PTSans;
 }
 
 .hover-good {
@@ -949,6 +954,7 @@ body {
 	font-size:16px;
 	padding-bottom:10px;
 	line-height:30px;
+	padding-left: 20px;
 }
 
 .hover-buy a {
@@ -995,7 +1001,7 @@ body {
 	content: "";
 	width: 20px;
 	height: 20px;
-	left: 20px;
+	left: 30px;
 	top: 10px;
 	margin: auto;
 	background: url("/img/TechnomartIcons/icons/icon-cart.svg") no-repeat;
@@ -1032,23 +1038,22 @@ body {
 }
 
 .previus-price {
-	width: 100%;
-	text-align: center;
-	text-decoration: line-through;
+	
 }
 
 .previus-price {
-	font-size: 20px;
+	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
 	align-items: center;
 	text-align: center;
 	text-decoration-line: line-through;
-	text-transform: uppercase;
 	color: #a9a9a9;
+	width: 100%;
 }
 
 .actual-price {
+	font-family: PTSans ;
 	position: relative;
 	background: #ee3643;
 	color: white;
@@ -1056,8 +1061,7 @@ body {
 	width: 120px;
 	margin-left: 46px;
 	text-align: center;
-	font-weight: bold;
-	font-size: 22px;
+	font-size: 17px;
 	line-height: 42px;
 	margin-top: 6px;
 }
@@ -1098,9 +1102,6 @@ body {
 	float: left;
 	text-align: center;
 	align-items: center;
-}
-
-.pages li {
 	margin-top: 5px;
 	margin-left: 11px;
 	width: 33px;
@@ -1109,7 +1110,6 @@ body {
 	padding-bottom: 5px;
 	font-size: 13px;
 	font-family: PTSans;
-	/* padding: 6px 10px 10px 20px; */
 }
 
 .pages a {
@@ -1140,6 +1140,7 @@ body {
 	width: 139px;
 	height: 27px;
 	margin-left: 16px;
+	text-transform: uppercase;
 }
 
 footer {
@@ -1159,7 +1160,7 @@ footer {
 
 .catalog-top-footer h3 {
 	padding-top: 64px;
-	font-size: 29px;
+	font-size: 30px;
 	text-transform: uppercase;
 }
 
