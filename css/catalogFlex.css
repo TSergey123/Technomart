@@ -940,7 +940,7 @@ body {
 	position: absolute;
 	width: 100px;
 	height: 30px;
-	background: red;
+	background: #ee3643;
 	transform: rotate(45deg);
 	text-align: center;
 	color: white;
@@ -1185,7 +1185,7 @@ body {
 }
 
 .page-number:first-child {
-	background: red;
+	background: #ee3643;
 }
 
 .pages li:last-child {
