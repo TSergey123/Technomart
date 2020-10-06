@@ -108,8 +108,7 @@ body {
 	height: 32px;
 	padding-top: 10px;
 	position: relative;
-	margin-left:15px;
-
+	margin-left: 15px;
 }
 
 .bookmarks a {
@@ -151,8 +150,8 @@ body {
 	text-align: center;
 	justify-self: start;
 	position: relative;
-	background:#EE3643;
-	margin-left:21px;
+	background: #ee3643;
+	margin-left: 21px;
 }
 
 .basket a {
@@ -160,7 +159,7 @@ body {
 	color: white;
 	font-family: Cuprum;
 	line-height: 45px;
-	padding-left:19px;
+	padding-left: 19px;
 }
 
 .basket::before {
@@ -406,7 +405,8 @@ body {
 }
 
 .registered a:hover::after {
-	background: url("/img/TechnomartIcons/icons/icon-logout-black.svg") no-repeat 35%;
+	background: url("/img/TechnomartIcons/icons/icon-logout-black.svg") no-repeat
+		35%;
 }
 
 .registered a:active {
@@ -519,7 +519,6 @@ body {
 	padding-top: 1px;
 	font-size: 14px;
 	font-style: PTSans;
-
 }
 
 .catalog-list a {
@@ -554,7 +553,7 @@ body {
 	line-height: 90px;
 	font-size: 30px;
 	font-weight: normal;
-	padding-top:2px;
+	padding-top: 2px;
 }
 
 .filter-block {
@@ -578,6 +577,46 @@ body {
 	margin-top: 20px;
 }
 
+/* fake slider */
+
+.circle {
+	border: 8px solid white;
+	background: #ababab;
+	border-radius: 25px;
+	width: 3px;
+	height: 3px;
+	position: absolute;
+}
+
+.left {
+	left: -9px;
+	top: -11px;
+}
+
+.right {
+	right: 0;
+	top: -11px;
+}
+
+.range-line {
+	border-top: 3px solid green;
+	/* margin-top:55px; */
+	width: 156px;
+	margin-left: 25px;
+	position: relative;
+	top: 41px;
+}
+
+.second-range-line {
+	border-top: 3px solid silver;
+	position: absolute;
+	width: 20px;
+	top: -3px;
+	right: -19px;
+}
+
+/* fake slider */
+
 /* price-slider */
 
 .price-slider {
@@ -586,6 +625,7 @@ body {
 	margin-bottom: 10px;
 	background: #f7f3ec;
 	height: 80px;
+	width: 220px;
 }
 
 .price-slider input {
@@ -598,8 +638,8 @@ body {
 #max_price_input,
 #min_price_input {
 	text-align: center;
-	height: 30px;
-	width: 90px;
+	height: 38px;
+	width: 95px;
 	border: transparent;
 	background: #f7f3ec;
 }
@@ -675,6 +715,7 @@ body {
 	bottom: 0px;
 	left: 0;
 	background: url("/img/TechnomartIcons/icons/checkbox-off.svg") no-repeat;
+	opacity: 0.8;
 }
 
 .filter-manufacturer label::after {
@@ -686,6 +727,7 @@ body {
 	bottom: 0;
 	left: 0;
 	background: url("/img/TechnomartIcons/icons/checkbox-on.svg") no-repeat;
+	opacity: 0.8;
 }
 
 .filter-manufacturer input[type="checkbox"] + label::after {
@@ -695,6 +737,35 @@ body {
 .filter-manufacturer input[type="checkbox"]:checked + label::after {
 	content: "";
 }
+
+.filter-manufacturer label:hover::after,
+.filter-manufacturer label:hover::before {
+	opacity: 1;
+}
+
+/* .filter-manufacturer input[type="checkbox"]:checked:disabled + label::after {
+	opacity:0.3;
+}
+
+.filter-manufacturer input[type="checkbox"]:checked:disabled + label::before {
+	opacity:0.3;
+}
+
+.filter-manufacturer input[type="checkbox"]:disabled + label::after {
+	opacity:0.3;
+}
+
+.filter-manufacturer input[type="checkbox"]:disabled + label::before {
+	opacity:0.3;
+}  */
+.filter-manufacturer input[type="checkbox"]:disabled + label,
+.filter-manufacturer input[type="checkbox"]:checked:disabled + label {
+	opacity: 0.3;
+}
+/* 
+.filter-manufacturer input[type="checkbox"]:disabled + label{
+	opacity:0.3;
+} */
 
 .checkbox-sort {
 	padding-top: 20px;
@@ -792,7 +863,7 @@ body {
 	height: 1080px;
 }
 
-.catalog-sort nav{
+.catalog-sort nav {
 	text-transform: uppercase;
 }
 
@@ -868,14 +939,16 @@ body {
 .arrow-down a {
 	width: 25px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/filter-arrow-down.svg") no-repeat 55%;
+	background: url("/img/TechnomartIcons/icons/filter-arrow-down.svg") no-repeat
+		55%;
 	display: inline-block;
 }
 
 .arrow-up a {
 	width: 25px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/filter-arrow-up-red.svg") no-repeat 55%;
+	background: url("/img/TechnomartIcons/icons/filter-arrow-up-red.svg") no-repeat
+		55%;
 	display: inline-block;
 }
 
@@ -945,15 +1018,15 @@ body {
 	display: none;
 }
 
-.hover-buy input{
-	width:100%;
-	height:100%;
-	background:transparent;
+.hover-buy input {
+	width: 100%;
+	height: 100%;
+	background: transparent;
 	/* border:transparent; */
-	color:white;
-	font-size:16px;
-	padding-bottom:10px;
-	line-height:30px;
+	color: white;
+	font-size: 16px;
+	padding-bottom: 10px;
+	line-height: 30px;
 	padding-left: 20px;
 }
 
@@ -966,13 +1039,13 @@ body {
 	line-height: 30px;
 }
 
-.hover-bookmarks input{
+.hover-bookmarks input {
 	color: #32425c;
-	font-size:14px;
+	font-size: 14px;
 	height: 100%;
-	width:100%;
+	width: 100%;
 	background: transparent;
-	border:transparent;
+	border: transparent;
 	text-transform: uppercase;
 }
 
@@ -1038,7 +1111,6 @@ body {
 }
 
 .previus-price {
-	
 }
 
 .previus-price {
@@ -1053,7 +1125,7 @@ body {
 }
 
 .actual-price {
-	font-family: PTSans ;
+	font-family: PTSans;
 	position: relative;
 	background: #ee3643;
 	color: white;

@@ -102,7 +102,8 @@
 						<h3>Цена:</h3>
 						<form action="">
 							<div class="price-slider" data-lbound="10" data-unbound="50">
-								<input
+								<div class="range-line"><div class="left circle"></div><div class="right circle"></div><div class="second-range-line"></div></div>
+								<!-- <input
 									type="range"
 									min="0"
 									max="1500"
@@ -119,26 +120,26 @@
 									value="3000"
 									id="max_range"
 									oninput="maxRangeOut(this.value)"
-								/>
+								/> -->
 							</div>
 							<div class="total-price">
 								<div class="min-price">
-									<input type="text" name="" id="min_price_input" value="1" />
+									<input type="text" name="" id="min_price_input" value="0" />
 								</div>
 								<span class="line"> - </span>
 								<div class="max-price">
-									<input type="text" name="" id="max_price_input" value="3000" />
+									<input type="text" name="" id="max_price_input" value="30000" />
 								</div>
 							</div>
 							<div class="filter-manufacturer">
 								<h3>Производители:</h3>
 								<div class="checkbox-sort">
-									<input type="checkbox" name="bosch_check" id="bosch_check" checked />
+									<input type="checkbox" name="bosch_check" id="bosch_check" checked disabled />
 									<label for="bosch_check">Bosch</label><br />
 								</div>
 
 								<div class="checkbox-sort">
-									<input type="checkbox" name="interskol_check" id="interskol_check" />
+									<input type="checkbox" name="interskol_check" id="interskol_check" disabled />
 									<label for="interskol_check">Интерскол</label> <br />
 								</div>
 
