@@ -742,30 +742,10 @@ body {
 .filter-manufacturer label:hover::before {
 	opacity: 1;
 }
-
-/* .filter-manufacturer input[type="checkbox"]:checked:disabled + label::after {
-	opacity:0.3;
-}
-
-.filter-manufacturer input[type="checkbox"]:checked:disabled + label::before {
-	opacity:0.3;
-}
-
-.filter-manufacturer input[type="checkbox"]:disabled + label::after {
-	opacity:0.3;
-}
-
-.filter-manufacturer input[type="checkbox"]:disabled + label::before {
-	opacity:0.3;
-}  */
 .filter-manufacturer input[type="checkbox"]:disabled + label,
 .filter-manufacturer input[type="checkbox"]:checked:disabled + label {
 	opacity: 0.3;
 }
-/* 
-.filter-manufacturer input[type="checkbox"]:disabled + label{
-	opacity:0.3;
-} */
 
 .checkbox-sort {
 	padding-top: 20px;
@@ -1174,7 +1154,7 @@ body {
 	float: left;
 	text-align: center;
 	align-items: center;
-	margin-top: 5px;
+	margin-top: 14px;
 	margin-left: 11px;
 	width: 33px;
 	height: 24px;
