@@ -183,7 +183,7 @@
 				background:pink;
 			}
 
-			.red{
+			.violet{
 				background:violet;
 			}
 
@@ -196,7 +196,7 @@
 
 		<div id="get_lost_modal" class="lost-modal-class">
 			<div class="lost-modal" id="lost-modal">
-				<form action="" id="form">
+				<form action="" id="form" name="modalForm">
 					<div class="modal-block" id="show_modal" style="border: 1px solid violet">
 						<div class="modal-block-header">
 							<span class="closeModal">&times;</span>
@@ -205,6 +205,7 @@
 							<div class="modal-name">
 								<label for="">Ваше имя:</label>
 								<input
+								name="modalName"
 									type="text"
 									placeholder="Представьтесь, пожалуйста"
 									id="name"
@@ -216,6 +217,7 @@
 							<div class="modal-email">
 								<label for="">Ваше e-mail:</label>
 								<input
+								name="modalEmail"
 									id="mail"
 									type="email"
 									class="field"
@@ -227,7 +229,7 @@
 							<div class="modal-area" min=>
 							<label for="">Текст письма:</label>
 							<textarea
-								name=""
+								name="modalArea"
 								id="area"
 								cols="57"
 								rows="6"
@@ -276,27 +278,69 @@
 
 			let fields = form.querySelectorAll(".field");
 
-for (let field of fields){
-			submit.onclick = function () {
-				if (field.value.length == ""){
-				// if (document.querySelectorAll(".field").values.length == "") {
-					// showModal.classList.add("wibro");
-					// showModal.classList.remove("wibro");
+// for (let field of fields){
+// 			submit.onclick = function () {
+// 				if (field.value.length == ""){
+// 				// if (document.querySelectorAll(".field").values.length == "") {
+// 					// showModal.classList.add("wibro");
+// 					// showModal.classList.remove("wibro");
 
-					showModal.classList.add("red");
-					showModal.classList.remove("red");
+// 					showModal.classList.add("red");
+// 					showModal.classList.remove("red");
 
-					// showModal.classList.add("pink");
-					// showModal.classList.remove("pink");
+// 					// showModal.classList.add("pink");
+// 					// showModal.classList.remove("pink");
 					
 
-				}else if(field.value.length !== ""){
-					showModal.classList.add("pink");
-					showModal.classList.remove("pink");
-					
-				}
-			};
-		}
+// 				}else if(field.value.length !== ""){
+// 					showModal.classList.add("pink");
+// 					showModal.classList.remove("pink");
+// 				}
+// 			};
+// 		}
+
+	// submit.onclick = function(){
+
+	// 	document.querySelectorAll('.field').className= 'wibro';
+
+
+		// for(let field of fields){
+			// showModal.classList.add("wibro");
+
+		// }
+		// if(fields.values.length == 0){
+		// 	showModal.classList.add("wibro");
+
+		// } else{
+		// 	console.log("2")
+
+		// }
+
+
+
+	// let items = [];
+	// submit.onclick = function(){
+	// 	let fields = form.querySelectorAll(".field");
+	// 	items.push(fields);
+	// 	if (items.values !== ""){
+	// 		// showModal.classList.add('wibro');
+	// 		// showModal.classList.remove;
+	// 		console.log("empty");
+
+	// 	} else{
+	// 		console.log("not empty");
+	// 		// showModal.classList.add('violet');
+			
+	// 	}
+	// 	// console.log(items);
+	// }
+
+	// submit.onclick = function(){
+	// 	let x = document.forms["modalForm"]["modalName"]["modalEmail"].values;
+	// 	if( x == ""){
+	// 		alert("Name must be filled out");
+	// 	}
+	// }
 		
 		</script>
 	</body>

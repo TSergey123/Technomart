@@ -9,6 +9,7 @@ let purchasebtnCloses = document.querySelectorAll(".purchase-btn");
 for (let purchaseBtn of purchaseBtns){
 	purchaseBtn.onclick = function () {
 	purchaseModal.style.display = "block";
+
 };
 }
 
