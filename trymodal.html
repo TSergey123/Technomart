@@ -174,6 +174,20 @@
 				animation: 0.1s error ease-out;
 			}
 
+			.red{
+				background:red;
+			}
+
+
+			.pink{
+				background:pink;
+			}
+
+			.red{
+				background:violet;
+			}
+
+
 		</style>
 
 		<div class="super-button">
@@ -260,25 +274,30 @@
 			let showModal = document.getElementById("show_modal");
 			let form = document.getElementById("form");
 
-			var field = form.querySelectorAll(".field");
+			let fields = form.querySelectorAll(".field");
 
+for (let field of fields){
 			submit.onclick = function () {
-				if (document.querySelectorAll(".field").values.length == "") {
-					showModal.classList.add("wibro");
-					showModal.classList.remove;
-					// showModal.classList.remove('wibro');
+				if (field.value.length == ""){
+				// if (document.querySelectorAll(".field").values.length == "") {
+					// showModal.classList.add("wibro");
+					// showModal.classList.remove("wibro");
+
+					showModal.classList.add("red");
+					showModal.classList.remove("red");
+
+					// showModal.classList.add("pink");
+					// showModal.classList.remove("pink");
+					
+
+				}else if(field.value.length !== ""){
+					showModal.classList.add("pink");
+					showModal.classList.remove("pink");
+					
 				}
 			};
-
-			// submit.onclick = function () {
-			// 	if (document.getElementById("name").value.length == "") {
-			// 		showModal.classList.add("wibro");
-			// 		showModal.classList.remove("wibro");
-			// 	} else if (document.getElementById("mail").value.length == "") {
-			//         // alert("full");
-			// 		// showModal.style = "animation: 0.2s tremor ease-out;";
-			// 	}
-			// };
+		}
+		
 		</script>
 	</body>
 </html>

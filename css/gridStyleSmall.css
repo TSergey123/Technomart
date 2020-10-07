@@ -1313,7 +1313,7 @@ body {
 .modal {
 	display: none;
 	position: fixed;
-	padding-top: 100px;
+	padding-top: 175px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -1327,9 +1327,9 @@ body {
 	position: relative;
 	margin: auto;
 	padding: 0;
-	border: 5px solid grey;
-	width: 800px;
-	height: 500px;
+	border-top:5px solid red;
+	width: 940px;
+	height: 442px;
 	animation-name: animatetop;
 	animation-duration: 0.4s;
 }
@@ -1346,19 +1346,17 @@ body {
 }
 
 .modal-content iframe {
-	width: 800px;
-	height: 500px;
+	width: 940px;
+	height: 442px;
 }
 
 .close {
 	position: absolute;
 	color: red;
 	float: right;
-	font-size: 28px;
 	font-weight: bold;
 	right: 0;
 	padding-top: 25px;
-	font-size: 100px;
 }
 
 .close:hover,
@@ -1623,8 +1621,8 @@ body {
 /* lost modal */
 
 .modal-block {
-	width: 600px;
-	height: 420px;
+	width: 610px;
+	height: 430px;
 	border: 1px solid lightgrey;
 	font-size: 20px;
 	font-weight: bold;
@@ -1638,9 +1636,9 @@ body {
 }
 
 .modal-block input {
-	width: 204px;
-	height: 30px;
-	border-radius: 5px;
+	width: 214px;
+	height: 32px;
+	border:1px solid lightgray
 }
 
 .modal-block-header {
@@ -1659,7 +1657,7 @@ body {
 }
 
 .main-modal-block {
-	width: 450px;
+	width: 500px;
 	height: 270px;
 	margin: auto;
 	display: flex;
@@ -1675,6 +1673,14 @@ body {
 
 .modal-block-footer input {
 	background: #ee3643;
+}
+
+.main-up-modal-block{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height:10px;
 }
 
 .center-footer {
@@ -1695,19 +1701,26 @@ body {
 .modal-name label,
 .modal-email label {
 	height: 30px;
-	align-self: flex-end;
+	align-self: flex-start;
+	font-family: Cuprum;
+	font-size:18px;
 }
+
 
 .modal-name,
 .modal-email {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 192px;
+	align-self: flex-start;
+
+}
+.modal-name{
+	padding-left:10px;
 }
 
 .modal-email {
-	margin-left: 60px;
+	/* padding-right:10px; */
 }
 
 .modal-area {
@@ -1715,15 +1728,23 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-self: flex-start;
 }
 
 .modal-area textarea {
 	border-radius: 5px;
+	width:455px;
+	height:110px;
+	margin-left:10px;
+	border:1px solid lightgray
 }
 
 .modal-area label {
 	height: 30px;
-	align-self: flex-end;
+	font-size:17px;
+	align-self: flex-start;
+	margin-top:20px;
+	padding-left:10px;
 }
 
 /* show-modal */
@@ -1731,7 +1752,7 @@ body {
 .lost-modal-class {
 	display: none;
 	position: fixed;
-	padding-top: 620px;
+	padding-top: 240px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -1774,3 +1795,6 @@ body {
 }
 
 /* lost-modal */
+
+
+
