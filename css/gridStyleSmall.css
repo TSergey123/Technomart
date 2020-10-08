@@ -609,6 +609,31 @@ body {
 
 /* carousel */
 
+.carousel-radio {
+	width: 25px;
+	height: 25px;
+	z-index: 100;
+	position: relative;
+}
+
+.carousel-radio label {
+	position: relative;
+}
+
+.carousel-radio label::before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	bottom: 0;
+	left: 0;
+	border: 5px solid green;
+	border-radius: 25px;
+	background: red;
+	color: red;
+	z-index: 100;
+}
+
 .carousel-wrapper {
 	height: 386px;
 	position: relative;
@@ -629,7 +654,58 @@ body {
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 12px;
+	position: relative;
 }
+
+.item-1::before{
+	position: absolute;
+	content: "";
+	border:3px solid white;
+	width:5px;
+	height:5px;
+	border-radius: 25px;
+	left:294px;
+	bottom:15px;
+	background:white;
+}
+
+.item-1::after{
+	position: absolute;
+	content: "";
+	border:3px solid white;
+	width:5px;
+	height:5px;
+	border-radius: 25px;
+	left:315px;
+	bottom:15px;
+	background:red;
+}
+
+.item-2::before{
+	position: absolute;
+	content: "";
+	border:3px solid white;
+	width:5px;
+	height:5px;
+	border-radius: 25px;
+	left:294px;
+	bottom:15px;
+	background:red;
+}
+
+.item-2::after{
+	position: absolute;
+	content: "";
+	border:3px solid white;
+	width:5px;
+	height:5px;
+	border-radius: 25px;
+	left:315px;
+	bottom:15px;
+	background:white;
+}
+
+
 
 .arrow-prev {
 	left: 30px;
@@ -764,8 +840,9 @@ body {
 
 .popular-goods h2 {
 	font-family: Cuprum;
-	font-size: 30px;
-	margin-left: 25px;
+	line-height: 39px;
+	font-size: 29px;
+	margin-left: 26px;
 	margin-top: 25px;
 	text-transform: uppercase;
 	grid-column: 1;
@@ -1758,7 +1835,7 @@ body {
 	overflow: auto;
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
-	z-index:100;
+	z-index: 100;
 }
 
 .closeModal {
@@ -1813,7 +1890,6 @@ body {
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
 	z-index: 100;
-
 }
 
 .purchase-modal-content {
