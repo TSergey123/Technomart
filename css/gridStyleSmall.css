@@ -657,55 +657,53 @@ body {
 	position: relative;
 }
 
-.item-1::before{
+.item-1::before {
 	position: absolute;
 	content: "";
-	border:3px solid white;
-	width:5px;
-	height:5px;
+	border: 3px solid white;
+	width: 5px;
+	height: 5px;
 	border-radius: 25px;
-	left:294px;
-	bottom:15px;
-	background:white;
+	left: 294px;
+	bottom: 15px;
+	background: white;
 }
 
-.item-1::after{
+.item-1::after {
 	position: absolute;
 	content: "";
-	border:3px solid white;
-	width:5px;
-	height:5px;
+	border: 3px solid white;
+	width: 5px;
+	height: 5px;
 	border-radius: 25px;
-	left:315px;
-	bottom:15px;
-	background:red;
+	left: 315px;
+	bottom: 15px;
+	background: red;
 }
 
-.item-2::before{
+.item-2::before {
 	position: absolute;
 	content: "";
-	border:3px solid white;
-	width:5px;
-	height:5px;
+	border: 3px solid white;
+	width: 5px;
+	height: 5px;
 	border-radius: 25px;
-	left:294px;
-	bottom:15px;
-	background:red;
+	left: 294px;
+	bottom: 15px;
+	background: red;
 }
 
-.item-2::after{
+.item-2::after {
 	position: absolute;
 	content: "";
-	border:3px solid white;
-	width:5px;
-	height:5px;
+	border: 3px solid white;
+	width: 5px;
+	height: 5px;
 	border-radius: 25px;
-	left:315px;
-	bottom:15px;
-	background:white;
+	left: 315px;
+	bottom: 15px;
+	background: white;
 }
-
-
 
 .arrow-prev {
 	left: 30px;
@@ -1152,8 +1150,8 @@ body {
 	display: grid;
 	grid-template-columns: 295px 100px 100px;
 	grid-template-rows: 60px 127px 13px;
-	background: url("/img/TechnomartIcons/other_images/delicar.png") no-repeat 100%
-		50%;
+	/* background: url("/img/TechnomartIcons/other_images/delicar.png") no-repeat 100%
+		50%; */
 	background-position: 100% 129%;
 }
 
@@ -1188,6 +1186,16 @@ body {
 	position: relative;
 }
 
+#delivery_display,
+#guarantee_display,
+#credit_display {
+	/* display: none; */
+}
+
+services-table li:first-child::active .delivery-terms {
+	display: none;
+}
+
 .services-table::after {
 	content: "";
 	position: absolute;
@@ -1215,56 +1223,74 @@ body {
 
 .services-table li {
 	list-style-type: none;
-	width: 240px;
-	height: 61px;
+	width: 218px;
+	height: 62px;
 	font-weight: bold;
 	align-items: center;
 	background-color: white;
 	box-shadow: 0px 1px 0px #ffffff;
 	opacity: 1;
-	float: left;
 	color: white;
 	line-height: 60px;
+	font-size: 21px;
+	padding-left: 22px;
 }
 
-.services-table a {
-	font-size: 22px;
+.services-table label {
+	cursor: pointer;
+}
+/* .ddl{
+	border-top:3px solid #32425c;
+} */
+.services-table input {
+	display: none;
 }
 
-.services-table li:not(:first-child) {
-	background: #32425c;
-	border-top: 1px solid #17202e5d;
-	color: white;
-	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
-	opacity: 1;
-}
-
-.services-table li:first-child {
-	background: #ffffff;
-}
-
-.services-table li:first-child:hover {
-	background: #293449;
-}
-
-.services-table li:first-child:hover a {
-	color: white;
-}
-
-.services-table li:first-child:active {
+input[name="services-table-radio"]:checked + label li {
 	background: white;
+	color: #32425c;
 }
 
-.services-table li:first-child:active a {
-	color: black;
+input[name="services-table-radio"]:not(:checked) + label li {
+	background: #32425c;
+	color: white;
+}
+
+input[name="services-table-radio"]:not(:checked) + label li:hover {
+	background: #293449;
+	color: white;
 }
 
 .delivery-terms {
 	margin-left: 25px;
-	width: 615px;
+	width: 619px;
 	height: 300px;
 	grid-column: 2;
 	grid-row: 4;
+	background: url("/img/TechnomartIcons/other_images/delicar.png") no-repeat 100%
+		143%;
+}
+
+.guarantee-terms {
+	margin-left: 25px;
+	width: 639px;
+	height: 300px;
+	grid-column: 2;
+	grid-row: 4;
+	display: none;
+	background: url("/img/TechnomartIcons/other_images/guaranteebg.png") no-repeat
+		96% 200%;
+}
+
+.credit-terms {
+	margin-left: 25px;
+	width: 700px;
+	height: 300px;
+	grid-column: 2;
+	grid-row: 4;
+	display: none;
+	background: url("/img/TechnomartIcons/other_images/bgCredit.png") no-repeat 70%
+		200%;
 }
 
 .delivery-terms-text {
@@ -1273,20 +1299,47 @@ body {
 	margin-top: 35px;
 }
 
-.delivery-terms h2 {
+.guarantee-terms-text {
+	width: 270px;
+	height: 200px;
+	margin-top: 35px;
+}
+
+.credit-terms-text {
+	width: 270px;
+	height: 200px;
+	margin-top: 35px;
+}
+
+.send-request input {
+	width: 195px;
+	height: 40px;
+	background: red;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin-top: 23px;
+	font-family: Cuprum;
+}
+
+.delivery-terms h2,
+.credit-terms h2,
+.guarantee-terms h2 {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #32425c;
 }
 
-.delivery-terms p {
+.delivery-terms p,
+.credit-terms p,
+.guarantee-terms p {
 	font-family: PtSans;
 	font-size: 13px;
 	line-height: 25px;
 	width: 313px;
 	margin-top: 28px;
-	height: 99px;
 }
 
 .about-contacts {

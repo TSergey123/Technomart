@@ -306,14 +306,46 @@
 						<div class="services-table-block">
 							<nav class="services-table">
 								<ul>
-									<li><a href="emptypage.html">Доставка</a></li>
-									<li><a href="emptypage.html">Гарантия</a></li>
-									<li><a href="emptypage.html">Кредит</a></li>
+									<input type="radio" id="delivery_display" name="services-table-radio" checked>
+									<label class="delivery-display-label" for="delivery_display"><li class="ddl">Доставка</li></label>
+									
+									<input  type="radio" id="guarantee_display" name="services-table-radio">
+									<label class="guarantee-display-label" for="guarantee_display"><li class="gdl">Гарантия</li></label>
+									
+									<input type="radio" id="credit_display" name="services-table-radio">
+									<label class="credit-display-label" for="credit_display"><li class="cdl">Кредит</li></label>
+					
+									
 								</ul>
 							</nav>
 						</div>
 
-						<div class="delivery-terms">
+						<div class="guarantee-terms" id="guarantee_terms">
+							<div class="guarantee-terms-text">
+								<h2>Гарантия</h2>
+								<p>
+									Если купленный у нас товар поломается или заискрит, а также в случае
+									пожара, спровоцированного его вогаранием, вы всегда можете быть уверены
+									в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
+									восстановите как нибудь сами.
+								</p>
+							</div>
+						</div>
+
+						<div class="credit-terms" id="credit_terms">
+							<div class="credit-terms-text">
+								<h2>Кредит</h2>
+								<p>
+									Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам
+									на помощь.
+								</p>
+								<form class="send-request">
+									<input type="button" value="Отправить заявку" />
+								</form>
+							</div>
+						</div>
+
+						<div class="delivery-terms" id="delivery_terms">
 							<div class="delivery-terms-text">
 								<h2>Доставка</h2>
 								<p>
@@ -537,5 +569,6 @@
 		<script src="/js/addBookmark.js"></script>
 		<script src="/js/lostModal.js"></script>
 		<script src="/js/purchaseModal.js"></script>
+		<script src="/js/servicesblock.js"></script>
 	</body>
 </html>
