@@ -366,7 +366,7 @@ body {
 	position: relative;
 }
 
-.registered a::before {
+.profile::before {
 	content: "";
 	position: absolute;
 	top: 11px;
@@ -377,7 +377,7 @@ body {
 	/* opacity: 0.3; */
 }
 
-.registered a::after {
+.deauthorization::after {
 	content: "";
 	position: absolute;
 	top: 11px;
@@ -394,7 +394,11 @@ body {
 	color: black;
 }
 
-.registered a:hover {
+.deauthorization:hover {
+	color: black;
+}
+
+.profile:hover {
 	color: black;
 }
 
@@ -1353,6 +1357,7 @@ footer {
 	height: 100%;
 	width: 181px;
 	align-self: center;
+	cursor: pointer;
 }
 
 .social-network li {

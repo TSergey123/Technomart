@@ -1186,24 +1186,32 @@ services-table li:first-child::active .delivery-terms {
 	right: 40px;
 }
 
-.services-table a {
-	text-decoration: none;
-	color: white;
-	padding-left: 20px;
-}
-
-.services-table li:first-child a {
-	color: black;
-}
-
 .services-table ul {
 	float: left;
 	margin-left: -40px;
 }
 
+.services-table label{
+	display: block;
+	height: 60px;
+	/* border: 0; */
+	background-color: #32425c;
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	border-top: 1px solid rgba(255,255,255,.1);
+	font-family: Cuprum,Arial,sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 21px;
+	padding-left: 22px;
+	text-align: left;
+	color: #fff;
+	transition: background-color 500ms;
+	cursor: pointer;
+}
+
 .services-table li {
 	list-style-type: none;
-	width: 218px;
+	width: 240px;
 	height: 62px;
 	font-weight: bold;
 	align-items: center;
@@ -1215,11 +1223,14 @@ services-table li:first-child::active .delivery-terms {
 	font-size: 21px;
 }
 
-.services-table label div{
-	height:100%;
+.services-table input:checked+label {
+	background-color: #fff;
+	color: #32425c;
+	border: 0;
 }
 
-.services-table div {
+.services-table label div{
+	height:100%;
 	cursor: pointer;
 	padding-left: 22px;
 }
