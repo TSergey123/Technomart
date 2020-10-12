@@ -7,7 +7,7 @@
 // addBasket.onclick = function () {
 // 	valueBasket.innerHTML = "Корзина: " + i++;
 // };
-let btnBasket = document.querySelectorAll("#basket_add");
+let btnBasket = document.querySelectorAll(".basket_add");
 let valueBasket = document.getElementById("basket_value");
 let basketBlock = document.getElementById("basketBlock");
 

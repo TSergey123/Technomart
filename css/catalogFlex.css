@@ -1,13 +1,13 @@
 @font-face {
 	font-family: Cuprum;
-	src: url("../fonts/cuprum.woff"), url("/fonts/cuprum.woff2");
+	src: url("../fonts/cuprum.woff"), url("../fonts/cuprum.woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Cuprum;
-	src: url("../fonts/cuprumbold.woff"), url("/fonts/cuprumbold.woff2");
+	src: url("../fonts/cuprumbold.woff"), url("../fonts/cuprumbold.woff2");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -15,28 +15,28 @@
 @font-face {
 	font-family: Cuprum;
 	src: url("../fonts/cuprumbolditalic.woff"),
-		url("/fonts/cuprumbolditalic.woff2");
+		url("../fonts/cuprumbolditalic.woff2");
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Cuprum;
-	src: url("../fonts/cuprumitalic.woff"), url("/fonts/cuprumitalic.woff2");
+	src: url("../fonts/cuprumitalic.woff"), url("../fonts/cuprumitalic.woff2");
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: PtSans;
-	src: url("../fonts/ptsans.woff"), url("/fonts/ptsans.woff2");
+	src: url("../fonts/ptsans.woff"), url("../fonts/ptsans.woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: PtSans;
-	src: url("../fonts/ptsansbold.woff"), url("/fonts/ptsansbold.woff2");
+	src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -47,9 +47,6 @@
 
 body {
 	min-width: 1240px;
-	/* margin: 0;
-	padding: 0;
-	line-height: 24px; */
 	font-family: Cuprum;
 }
 
@@ -124,7 +121,7 @@ body {
 	left: 21px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-bookmark.svg") no-repeat 25%;
+	background: url("../img/TechnomartIcons/icons/icon-bookmark.svg") no-repeat 25%;
 	opacity: 0.3;
 }
 
@@ -169,7 +166,7 @@ body {
 	left: 10px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-cart.svg") no-repeat 25%;
+	background: url("../img/TechnomartIcons/icons/icon-cart.svg") no-repeat 25%;
 	background-size: 15px;
 	opacity: 0.3;
 }
@@ -247,7 +244,7 @@ body {
 	left: 16px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-search.svg") no-repeat 25%;
+	background: url("../img/TechnomartIcons/icons/icon-search.svg") no-repeat 25%;
 	z-index: 1;
 	background-size: 15px;
 	opacity: 0.3;
@@ -265,7 +262,8 @@ body {
 
 .search-form:hover::before,
 .search-form:active::before {
-	background: url("/img/TechnomartIcons/icons/icon-search-red.svg") no-repeat 25%;
+	background: url("../img/TechnomartIcons/icons/icon-search-red.svg") no-repeat
+		25%;
 }
 
 .search-form a:active {
@@ -327,7 +325,7 @@ body {
 	padding-left: 20px;
 	padding-bottom: 30px;
 	line-height: 40px;
-	background: url("/img/TechnomartIcons/icons/icon-phone.svg") no-repeat 35px;
+	background: url("../img/TechnomartIcons/icons/icon-phone.svg") no-repeat 35px;
 	align-self: center;
 	margin-bottom: 10px;
 }
@@ -375,7 +373,7 @@ body {
 	left: 14px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-user.svg") no-repeat 25%;
+	background: url("../img/TechnomartIcons/icons/icon-user.svg") no-repeat 25%;
 	/* opacity: 0.3; */
 }
 
@@ -386,7 +384,7 @@ body {
 	right: 14px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-logout.svg") no-repeat 35%;
+	background: url("../img/TechnomartIcons/icons/icon-logout.svg") no-repeat 35%;
 	/* opacity: 0.3; */
 }
 
@@ -401,11 +399,12 @@ body {
 }
 
 .registered a:hover::before {
-	background: url("/img/TechnomartIcons/icons/icon-user-black.svg") no-repeat 35%;
+	background: url("../img/TechnomartIcons/icons/icon-user-black.svg") no-repeat
+		35%;
 }
 
 .registered a:hover::after {
-	background: url("/img/TechnomartIcons/icons/icon-logout-black.svg") no-repeat
+	background: url("../img/TechnomartIcons/icons/icon-logout-black.svg") no-repeat
 		35%;
 }
 
@@ -528,7 +527,7 @@ body {
 }
 
 .catalog-list li:not(:first-child) {
-	list-style-image: url("/img/TechnomartIcons/icons/arrow-right.svg");
+	list-style-image: url("../img/TechnomartIcons/icons/arrow-right.svg");
 	padding-left: 22px;
 }
 
@@ -714,7 +713,7 @@ body {
 	width: 30px;
 	bottom: 0px;
 	left: 0;
-	background: url("/img/TechnomartIcons/icons/checkbox-off.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/checkbox-off.svg") no-repeat;
 	opacity: 0.8;
 }
 
@@ -726,7 +725,7 @@ body {
 	width: 30px;
 	bottom: 0;
 	left: 0;
-	background: url("/img/TechnomartIcons/icons/checkbox-on.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/checkbox-on.svg") no-repeat;
 	opacity: 0.8;
 }
 
@@ -796,7 +795,7 @@ body {
 	left: 0;
 	width: 25px;
 	height: 25px;
-	background: url("/img/TechnomartIcons/icons/radio-off.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/radio-off.svg") no-repeat;
 }
 
 .radio-sort label::after {
@@ -806,7 +805,7 @@ body {
 	left: 0;
 	width: 25px;
 	height: 25px;
-	background: url("/img/TechnomartIcons/icons/radio-on.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/radio-on.svg") no-repeat;
 }
 
 .radio-sort input + label::after {
@@ -919,7 +918,7 @@ body {
 .arrow-down a {
 	width: 25px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/filter-arrow-down.svg") no-repeat
+	background: url("../img/TechnomartIcons/icons/filter-arrow-down.svg") no-repeat
 		55%;
 	display: inline-block;
 }
@@ -927,8 +926,8 @@ body {
 .arrow-up a {
 	width: 25px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/filter-arrow-up-red.svg") no-repeat
-		55%;
+	background: url("../img/TechnomartIcons/icons/filter-arrow-up-red.svg")
+		no-repeat 55%;
 	display: inline-block;
 }
 
@@ -1057,7 +1056,7 @@ body {
 	left: 30px;
 	top: 10px;
 	margin: auto;
-	background: url("/img/TechnomartIcons/icons/icon-cart.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/icon-cart.svg") no-repeat;
 }
 
 .hover-buy:hover {
@@ -1368,7 +1367,7 @@ footer {
 	left: 15px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-fb.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/icon-fb.svg") no-repeat;
 }
 
 .vk::before {
@@ -1378,7 +1377,7 @@ footer {
 	left: 9px;
 	width: 30px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-vk.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/icon-vk.svg") no-repeat;
 }
 
 .insta::before {
@@ -1388,7 +1387,7 @@ footer {
 	left: 12px;
 	width: 20px;
 	height: 20px;
-	background: url("/img/TechnomartIcons/icons/icon-insta.svg") no-repeat;
+	background: url("../img/TechnomartIcons/icons/icon-insta.svg") no-repeat;
 }
 
 .social {
@@ -1444,7 +1443,6 @@ footer {
 	color: #ffd180;
 }
 
-
 /* modal */
 
 .purchase-btn {
@@ -1462,112 +1460,98 @@ footer {
 	overflow: auto;
 	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.4);
-	z-index:100;
+	z-index: 100;
 }
 
 .purchase-modal-content {
 	position: relative;
 	margin: auto;
 	padding: 0;
-	border-top:6px solid #ee3643;
+	border-top: 6px solid #ee3643;
 	width: 620px;
 	height: 270px;
 	animation-name: animatetop;
 	animation-duration: 0.4s;
-	background:white;
-
+	background: white;
 }
 
-.purchase-modal-header{
-	height:40px;
+.purchase-modal-header {
+	height: 40px;
 	position: relative;
 	display: flex;
 	justify-content: flex-end;
-
 }
 
-.purchase-close::before{
+.purchase-close::before {
 	position: absolute;
 	content: "";
-	width:21px;
-	height:21px;
-	background:url("/img/TechnomartIcons/icons/icon-close.svg");
-	top:13px;
-	right:11px;
+	width: 21px;
+	height: 21px;
+	background: url("../img/TechnomartIcons/icons/icon-close.svg");
+	top: 13px;
+	right: 11px;
 	cursor: pointer;
 }
 
-.purchase-close{
-	width:40px;
-	height:40px;
+.purchase-close {
+	width: 40px;
+	height: 40px;
 }
 
-.purchase-modal-body{
-	height:120px;
+.purchase-modal-body {
+	height: 120px;
 }
 
-.purchase-modal-body{
+.purchase-modal-body {
 	display: flex;
 	justify-content: center;
-	font-size:25px;
+	font-size: 25px;
 	align-items: flex-end;
 	position: relative;
-
-
 }
 
-.purchase-modal-text{
-	height:93px;
-	width:270px;
-
-
+.purchase-modal-text {
+	height: 93px;
+	width: 270px;
 }
 
-.purchase-modal-body:before{
+.purchase-modal-body:before {
 	position: absolute;
 	content: "";
-	background:url("/img/TechnomartIcons/icons/icon-mark.svg");
-	width:66px;
-	height:66px;
-	left:80px;
-	top:6px;
-	
+	background: url("../img/TechnomartIcons/icons/icon-mark.svg");
+	width: 66px;
+	height: 66px;
+	left: 80px;
+	top: 6px;
 }
 
-.purchase-modal-footer{
-	height:110px;
-	background:silver;
+.purchase-modal-footer {
+	height: 110px;
+	background: silver;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-
 }
 
-.purchase-btn{
-	height:40px;
-	width:195px;
+.purchase-btn {
+	height: 40px;
+	width: 195px;
 	text-transform: uppercase;
-	font-size:11px;
-	margin-top:10px;
+	font-size: 11px;
+	margin-top: 10px;
 }
 
-.accept-purchase{
-	background:#ee3643;
-	color:white;
-
+.accept-purchase {
+	background: #ee3643;
+	color: white;
 }
 
-.continue-purchase{
-	margin-left:3px;
-	color:black;
-	background:white;
-	
+.continue-purchase {
+	margin-left: 3px;
+	color: black;
+	background: white;
 }
-
-
-
-
 
 @keyframes animatetop {
 	from {

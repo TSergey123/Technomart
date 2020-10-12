@@ -1,6 +1,6 @@
 let purchaseModal = document.getElementById("my_purchase_modal");
 
-let purchaseBtns = document.querySelectorAll("#basket_add");
+let purchaseBtns = document.querySelectorAll(".basket_add");
 
 let purchaseClose = document.getElementsByClassName("purchase-close")[0];
 
