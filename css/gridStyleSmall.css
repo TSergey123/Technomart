@@ -1213,30 +1213,33 @@ services-table li:first-child::active .delivery-terms {
 	color: white;
 	line-height: 60px;
 	font-size: 21px;
+}
+
+.services-table label div{
+	height:100%;
+}
+
+.services-table div {
+	cursor: pointer;
 	padding-left: 22px;
 }
 
-.services-table label {
-	cursor: pointer;
-}
-/* .ddl{
-	border-top:3px solid #32425c;
-} */
 .services-table input {
 	display: none;
 }
 
-input[name="services-table-radio"]:checked + label li {
+
+input[name="services-table-radio"]:checked + label div {
 	background: white;
 	color: #32425c;
 }
 
-input[name="services-table-radio"]:not(:checked) + label li {
+input[name="services-table-radio"]:not(:checked) + label div  {
 	background: #32425c;
 	color: white;
 }
 
-input[name="services-table-radio"]:not(:checked) + label li:hover {
+input[name="services-table-radio"]:not(:checked) +  label div:hover {
 	background: #293449;
 	color: white;
 }
