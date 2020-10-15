@@ -25,5 +25,4 @@ function minRangeOut(val) {
 
 function maxRangeOut(val) {
     document.getElementById("max_price_input").value = val;
-
 }   
